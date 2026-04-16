@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por tu compra! | Dami Fast Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --naranja: #ff8c00;
+            --oscuro: rgba(15, 15, 15, 0.9);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                        url('https://images.unsplash.com/photo-1596662951482-0c4ba74a6df6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #eeeeee;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--naranja);
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header-logo {
+            max-height: 55px;
+            width: auto;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        header h1 { 
+            margin: 0; 
+            color: #fff; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+        }
+
+        .contenedor-gracias {
+            max-width: 600px;
+            margin: auto;
+            padding: 40px 20px;
+            background: var(--oscuro);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            border: 1px solid rgba(255,140,0,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .icono-exito {
+            font-size: 5rem;
+            color: #25d366;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--naranja);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn-volver {
+            display: inline-block;
+            background-color: var(--naranja);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn-volver:hover {
+            transform: scale(1.05);
+            background-color: #e67e00;
+        }
+
+        .info-local {
+            background: rgba(0,0,0,0.9);
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 3px solid var(--naranja);
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 2.2rem;
+            margin: 0 20px;
+            transition: transform 0.3s, color 0.3s;
+            display: inline-block;
+        }
+
+        .social-links a:hover { 
+            color: var(--naranja); 
+            transform: scale(1.2);
+        }
+
+        footer { text-align: center; padding: 20px; color: #777; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="Logo Dami Fast Food" class="header-logo">
+        <h1>DAMI FAST FOOD</h1>
+    </header>
+
+    <div class="contenedor-gracias">
+        <div class="icono-exito">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h2>¡Gracias por tu compra!</h2>
+        <p>Estamos preparando tu pedido con el mejor sabor. <br> 
+        Muy pronto un domiciliario estará en tu puerta.</p>
+        
+        <a href="index.html" class="btn-volver">
+            <i class="fas fa-arrow-left"></i> VOLVER AL MENÚ
+        </a>
+    </div>
+
+    <div class="info-local">
+        <div class="social-links">
+            <p>SÍGUENOS MIENTRAS ESPERAS:</p>
+            <a href="https://www.instagram.com/damifastfood?igsh=MWtjemUzOHRrcGJvbA==" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=61570821602781" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Dami Fast Food | El sabor que manda</p>
+    </footer>
+
+</body>
+</html>
